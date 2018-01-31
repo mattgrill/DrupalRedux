@@ -1,0 +1,5 @@
+name: 'Redux'
+type: module
+description: 'Redux for Drupal'
+version: VERSION
+core: 8.x

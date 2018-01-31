@@ -1,0 +1,6 @@
+redux:
+  version: 1.x
+  js:
+    https://unpkg.com/redux@3.7.2/dist/redux.js:
+      external: true
+    js/lib/index.js: {}

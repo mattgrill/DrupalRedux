@@ -1,0 +1,17 @@
+{
+  "extends": [
+    "eslint-config-airbnb"
+  ],
+  "parser": "babel-eslint",
+  "root": true,
+  "globals": {
+    "Drupal": true
+  },
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "rules": {
+    "no-param-reassign": [0]
+  }
+}

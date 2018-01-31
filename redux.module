@@ -1,0 +1,8 @@
+<?php
+
+/**
+ * Implements hook_page_attachments().
+ */
+function redux_page_attachments(array &$page) {
+  $page['#attached']['library'][] = 'redux/redux';
+}
