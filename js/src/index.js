@@ -5,6 +5,6 @@
 
 import DrupalRedux from './lib';
 
-((Drupal) => {
+(Drupal => {
   Drupal.Redux = new DrupalRedux();
 })(Drupal);

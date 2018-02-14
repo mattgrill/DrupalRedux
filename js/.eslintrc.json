@@ -1,6 +1,7 @@
 {
   "extends": [
-    "eslint-config-airbnb"
+    "eslint-config-airbnb",
+    "plugin:prettier/recommended"
   ],
   "parser": "babel-eslint",
   "root": true,
@@ -12,6 +13,7 @@
     "es6": true
   },
   "rules": {
-    "no-param-reassign": [0]
+    "no-param-reassign": [0],
+    "no-underscore-dangle": [0]
   }
 }

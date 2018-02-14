@@ -10,7 +10,7 @@ const loadState = () => {
   }
 };
 
-const saveState = (state) => {
+const saveState = state => {
   try {
     const serializedState = JSON.stringify(state);
     localStorage.setItem('state', serializedState);

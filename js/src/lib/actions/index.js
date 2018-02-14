@@ -1,8 +1,14 @@
 const ADD = 'add';
+const REMOVE = 'remove';
 
 const add = payload => ({
   type: ADD,
   payload,
 });
 
-export { add, ADD };
+const remove = payload => ({
+  type: REMOVE,
+  payload,
+});
+
+export { add, ADD, remove, REMOVE };

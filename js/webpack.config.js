@@ -5,11 +5,11 @@ const Minify = require('babel-minify-webpack-plugin');
 const productionPluginDefine =
   process.env.NODE_ENV === 'production'
     ? [
-      new webpack.DefinePlugin({
-        'process.env.NODE_ENV': JSON.stringify('production'),
-      }),
-      new Minify(),
-    ]
+        new webpack.DefinePlugin({
+          'process.env.NODE_ENV': JSON.stringify('production'),
+        }),
+        new Minify(),
+      ]
     : [new webpack.SourceMapDevToolPlugin()];
 
 module.exports = [
@@ -28,6 +28,7 @@ module.exports = [
           exclude: ['/node_modules/'],
           query: {
             plugins: [
+              'transform-private-underscore',
               'transform-class-properties',
               'transform-object-rest-spread',
             ],
